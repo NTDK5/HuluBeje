@@ -38,7 +38,7 @@ body{
 .hero > h1{
     width: 30%;
     text-align: center;
-    color: #cbcbcb;
+    color: #ffffff;
     font-size: 30px;
     font-weight: light;
     padding: 10px 50px;
@@ -91,31 +91,44 @@ body{
     object-fit: cover;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 480px) {
     .hero{
-        width: 80%;
+        width: 100%;
         text-align: center;
     }
     .hero img{
-        width:500px;
+        width:350px;
         height: 200px;
-        object-fit: fill;
+        object-fit: contain;
         /* object-fit: c; */
     }
     .logo{
         width: 100%;
     }
     .hero > h1{
-        width: 70%;
+        width: 100%;
         font-size: 25px;
+        
     }
     .links{
-        width: 70%;
+        width: 80%;
     }
     .links img{
-        width: 200px;
+        width: 150px;
     }
     .follow{
         margin-top: 50px;
+    }
+    .socials a> img{
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        opacity: 0.5;
+    }
+    .socials{
+        width: 80%;
+    }
+    .follow > h2{
+        font-size: 20px;
     }
 }
